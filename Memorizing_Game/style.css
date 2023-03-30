@@ -1,0 +1,212 @@
+* {
+  position: relative;
+  font-family: "Merienda", cursive;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 7% 0 1;
+  height: 8vw;
+  border: 2px solid #e0e0e0;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card img {
+  max-width: 30%;
+  align-self: center;
+}
+
+.card p {
+  margin: 3px;
+  font-size: 10px;
+}
+
+.card p:last-child {
+  transform: rotate(180deg);
+}
+
+.back-pattern-default {
+  background-image: url(imgPackage/default.jpg);
+  background-size: cover;
+}
+
+.back-pattern-dot {
+  background-image: url(imgPackage/dot.jpg);
+  background-size: cover;
+}
+
+.back-pattern-yellow {
+  background-image: url(imgPackage/yellow.jpg);
+  background-size: cover;
+}
+
+.back-pattern-blue {
+  background-image: url(imgPackage/blue.jpg);
+  background-size: cover;
+}
+
+.paired {
+  background-color: #dae0e3;
+}
+
+#header {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+#header .title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#header .title img {
+  max-width: 3em;
+}
+
+#header .title h3 {
+  padding-left: 0.5em;
+}
+
+#header .score {
+  margin: 0;
+  color: #6c90ac;
+}
+
+#header .tried {
+  margin-top: 0;
+}
+
+.wrong {
+  animation: wrongAnimation 0.2s;
+  animation-iteration-count: 5;
+}
+
+/* Ending View */
+.complete-container {
+  position: absolute;
+  top: 120px;
+  left: -5px;
+  right: -5px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: url(imgPackage/Ace-poker-card.jpg) left top;
+  background-size: auto 100%;
+  color: #fff;
+  z-index: 999;
+}
+
+#banner {
+  margin: 5vh auto 2vh;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#banner h2 {
+  margin-bottom: -50px;
+}
+
+#banner p {
+  margin-bottom: 10px;
+}
+
+#record {
+  margin: 0 auto;
+  padding: 0.8em 3em;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+#record li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+#record li:last-child {
+  margin-bottom: 0;
+}
+
+#cardPattern {
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 9vw;
+  text-align: center;
+  background-color: rgba(200, 200, 200, 0.5);
+  box-shadow: 2px 0px 3px rgba(255, 255, 255, 0.7),
+    -2px 0px 3px rgba(255, 255, 255, 0.7);
+}
+
+#cardPattern div {
+  border: 3px solid #fff;
+  height: 31%;
+  border-radius: 5px;
+  margin: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#cardPattern div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#cardPattern div img {
+  width: 100%;
+  height: 100%;
+}
+
+#play-btn {
+  position: absolute;
+  right: 2em;
+  bottom: 0.5em;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+#play-btn:hover {
+  cursor: pointer;
+  color: #f1df0e;
+  transform: translatex(3px);
+  transition: 0.3s;
+}
+
+#play-btn:hover i {
+  border: 2px solid #f1df0e;
+}
+
+#play-btn i {
+  margin: 10px;
+  padding: 7px 2px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+@keyframes wrongAnimation {
+  to {
+    border: 2px solid #f1c232;
+  }
+}
