@@ -39,5 +39,5 @@ app.get('/restaurants/:restaurant_id', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Express is running on localhost: ${port}`)
+  console.log(`Express is listening on localhost: ${port}`)
 } )
