@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express project</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <!-- navigation -->
+  <nav class="container nav-container">
+    <li class="home-page"><a href="http://localhost:3000">回到首頁</a></li>
+    <div class="nav-function">
+      <li class="nav-item"><a href="http://localhost:3000/about">About</a></li>
+      <li class="nav-item"><a href="http://localhost:3000/portfolio">Portfolio</a></li>
+      <li class="nav-item"><a href="http://localhost:3000/contact">Contact</a></li>
+    </div>
+  </nav>
+
+  <!-- partial templates will replace the part of "body" here -->
+    <div class="container main-container">
+      {{{body}}}
+    </div>
+  
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+</html>

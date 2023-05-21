@@ -1,0 +1,39 @@
+.container {
+  margin: 1rem auto;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 60px;
+  align-items: center;
+}
+.nav-function {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+a {
+  display: block;
+  width: 100px;
+  margin-left: 1rem;
+  text-align: center;
+  background-color: #ccc;
+  color: #2f2f2f;
+  border-radius: 5px;
+  padding: .3rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #2f2f2f;
+}
+a:active, a:link {
+  color: #fff;
+  background-color: #444;
+}
+.main-container {
+  padding: 2rem 1.5rem;
+}
